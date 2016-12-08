@@ -2,13 +2,9 @@
 
 import argparse, subprocess
 
+from lib.db import tags
+
 manual_path = "/home/howlin/src/manual/"
-
-docker = 'tools/docker.md'
-git    = 'tools/git.md'
-vim    = 'tools/vim.md'
-
-tags = {'docker': docker, 'git': git, 'vim': vim}
 
 def open_page(page_path):
     url = "file:///" + manual_path + page_path
