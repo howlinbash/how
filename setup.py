@@ -1,8 +1,9 @@
 #! /usr/bin/python3
 
-import argparse, subprocess
+import subprocess
 
 from lib.db import tags
+from lib.parser import args
 
 manual_path = "/home/howlin/src/manual/"
 
@@ -13,11 +14,6 @@ def open_page(page_path):
 def edit_page(page_path):
     command = manual_path + page_path
     subprocess.call(['vim', command])
-
-parser = argparse.ArgumentParser(description = "Demo")
-parser.add_argument("-e", "--edit", help="Edit page", action="store_true")
-parser.add_argument("tag", help="Open page")
-args = parser.parse_args()
 
 tag = args.tag
 
