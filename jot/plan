@@ -48,15 +48,6 @@ network.md
 osx.md
 search.md
 
-## functions
- - add new tag (to old page)
- - create page (add tags, chose home(dir), append index/contents...)
- - read (in browser)
- - edit (in vim)
-
-call parse_args() from main
-
-
 ## libraries
 
 logging - for logging
@@ -90,4 +81,10 @@ setup(name = 'mytool',
     scripts = ['mytool']
     platforms = 'any')
 
-
+## functions
+ - add new tag (to old page)
+ - create page (add tags, chose home(dir), append index/contents...)
+ - read (in browser)
+ - edit (in vim)
+ - list pages
+ - append command
