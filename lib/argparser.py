@@ -1,0 +1,26 @@
+import argparse
+
+parser = argparse.ArgumentParser(description = "Demo")
+group = parser.add_mutually_exclusive_group()
+
+group.add_argument(
+        "-l", 
+        "--list-tags", 
+        help="List all tags and page paths", 
+        action="store_true"
+)
+
+parser.add_argument(
+        "-e", 
+        "--edit", 
+        help="Edit page", 
+        nargs='+'
+)
+
+parser.add_argument(
+        "tag", 
+        nargs='?',
+        help="Open page"
+)
+
+args = parser.parse_args()
