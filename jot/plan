@@ -105,6 +105,8 @@ p_wiki      i
 
 ### create_page
 
+ -t add_tag
+ -a append_command
 how -w [page_name] -p [path] -t [tag]
 
 argparser

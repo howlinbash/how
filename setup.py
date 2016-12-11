@@ -17,7 +17,7 @@ def list_tags():
     for x in sorted(tags):
         print (x.ljust(col_width), tags[x])
 
-def list_pages():
+def print_contents():
     program = "tree "
     options = " --noreport -C --dirsfirst -I "
     excluded_files = "\"" \
@@ -41,8 +41,8 @@ def get_page_path(arg):
 
 if args.edit:
     edit_page(get_page_path(args.edit[0]))
-elif args.list_pages:
-    list_pages()
+elif args.print_contents:
+    print_contents()
 elif args.list_tags:
     list_tags()
 elif args.tag:
