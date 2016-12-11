@@ -12,8 +12,10 @@ def edit_page(page_path):
     subprocess.call(['vim', command])
 
 def list_tags():
-    # Extend
-    print("list tags")
+    col_width = max(len(tag) for tag in tags) + 2
+
+    for x in sorted(tags):
+        print (x.ljust(col_width), tags[x])
 
 def list_pages():
     program = "tree "

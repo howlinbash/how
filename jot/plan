@@ -84,8 +84,9 @@ setup(name = 'mytool',
 ## Database
 
  - open_page
- - list_tags
  - edit_page
+ - list_tags
+ - list_pages
  - append_command
  - add_tag
  - create_page
