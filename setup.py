@@ -15,6 +15,21 @@ def list_tags():
     # Extend
     print("list tags")
 
+def list_pages():
+    program = "tree "
+    options = " --noreport -C --dirsfirst -I "
+    excluded_files = "\"" \
+        + "home.md" + "|" \
+        + "howlin-wolf-square-tiny.jpg" + "|" \
+        + "index.md" + "|" \
+        + "latest.md" + "|" \
+        + "template.md" + "|" \
+        + "README.md" + "|" \
+        + "pipeline" \
+        + "\""
+    argument = program + manual_path + options + excluded_files
+    subprocess.call(argument, shell=True)
+
 def open_page(page_path):
     url = "file:///" + manual_path + page_path
     subprocess.call(['chromium', url])
@@ -24,6 +39,8 @@ def get_page_path(arg):
 
 if args.edit:
     edit_page(get_page_path(args.edit[0]))
+elif args.list_pages:
+    list_pages()
 elif args.list_tags:
     list_tags()
 elif args.tag:

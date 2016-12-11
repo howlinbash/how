@@ -4,6 +4,13 @@ parser = argparse.ArgumentParser(description = "Demo")
 group = parser.add_mutually_exclusive_group()
 
 group.add_argument(
+        "-p", 
+        "--list-pages", 
+        help="Print directory tree of manual pages", 
+        action="store_true"
+)
+
+group.add_argument(
         "-l", 
         "--list-tags", 
         help="List all tags and page paths", 

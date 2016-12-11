@@ -81,6 +81,52 @@ setup(name = 'mytool',
     scripts = ['mytool']
     platforms = 'any')
 
+## Database
+
+ - open_page
+ - list_tags
+ - edit_page
+ - append_command
+ - add_tag
+ - create_page
+ - print wiki
+
+pages - id, page, path
+tags  - id, tag
+
+o_page:     lookup tag to lookup page
+e_page      lookup tag to lookup page
+a_command   lookup tag to lookup page
+l_tags      list all tags and all pages
+a_tag       lookup tag to lookup page to append to tags
+c_page      i
+p_wiki      i
+
+### create_page
+
+how -w [page_name] -p [path] -t [tag]
+
+argparser
+ -l list_tags
+ -e edit_page
+ -t add_tag
+ -w create_page
+ -p list_pages
+ -a append_command
+ -h list_headers
+
+### Other
+
+ - print page contents
+ - open page @ md header
+ - edit page @ md header
+
+i may need to create a settings dir for things like template page and index.
+what am i going to do about links?
+
+dynamic pages
+and man pages
+
 ## functions
  - add new tag (to old page)
  - create page (add tags, chose home(dir), append index/contents...)
