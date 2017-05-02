@@ -7,7 +7,7 @@ from lib.argparser import args, parser
 
 manual_path = "/home/howlin/src/manual/"
 
-def edit_page(page_path):
+def open_page(page_path):
     command = manual_path + page_path
     subprocess.call(['vim', command])
 
@@ -32,15 +32,15 @@ def print_contents():
     argument = program + manual_path + options + excluded_files
     subprocess.call(argument, shell=True)
 
-def open_page(page_path):
+def view_page(page_path):
     url = "file:///" + manual_path + page_path
     subprocess.call(['chromium', url])
 
 def get_page_path(arg):
     return str(tags.get(arg, 0))
 
-if args.edit:
-    edit_page(get_page_path(args.edit[0]))
+if args.view:
+    view_page(get_page_path(args.view[0]))
 elif args.print_contents:
     print_contents()
 elif args.list_tags:

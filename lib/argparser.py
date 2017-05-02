@@ -18,9 +18,9 @@ group.add_argument(
 )
 
 parser.add_argument(
-        "-e", 
-        "--edit", 
-        help="Edit page", 
+        "-v", 
+        "--view", 
+        help="View page", 
         nargs='+'
 )
 
