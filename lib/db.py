@@ -1,11 +1,50 @@
 pages = {
+        'autoreload': 'apps/autoreload.md',
+        'bower': 'apps/bower.md',
+        'grunt': 'apps/grunt.md',
+        'vagrant': 'apps/vagrant.md',
+        'yeoman': 'apps/yeoman.md',
+        'express': 'frameworks/express.md',
+        'jquery': 'frameworks/jquery.md',
+        'node': 'frameworks/node.md',
+        'javascript': 'languages/javascript.md',
         'docker': 'tools/docker.md',
         'git': 'tools/git.md',
-        'vim': 'tools/vim.md'
+        'vim': 'tools/vim.md',
+        'bash': 'unix/bash.md',
+        'basics': 'unix/basics.md',
+        'debug': 'unix/debug.md',
+        'intro': 'unix/intro.md',
+        'network': 'unix/network.md',
+        'osx': 'unix/osx.md',
+        'search': 'unix/search.md'
 }
 
 tags = {
+        'autoreload': pages['autoreload'],
+        'rl': pages['autoreload'],
+        'bower': pages['bower'],
+        'grunt': pages['grunt'],
+        'vagrant': pages['vagrant'],
+        'yeoman': pages['yeoman'],
+        'yo': pages['yeoman'],
+        'express': pages['express'],
+        'jquery': pages['jquery'],
+        'node': pages['node'],
+        'javascript': pages['javascript'],
+        'js': pages['javascript'],
         'docker': pages[ 'docker' ], 
         'git': pages[ 'git' ], 
-        'vim': pages[ 'vim' ]
+        'vim': pages[ 'vim' ],
+        'bash': pages['bash'],
+        'sh': pages['bash'],
+        'basics': pages['basics'],
+        'debug': pages['debug'],
+        'intro': pages['intro'],
+        'network': pages['network'],
+        'ssh': pages['network'],
+        'osx': pages['osx'],
+        'search': pages['search'],
+        'find': pages['search'],
+        'grep': pages['search']
 }
