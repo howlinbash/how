@@ -17,7 +17,8 @@ pages = {
         'intro': 'unix/intro.md',
         'network': 'unix/network.md',
         'osx': 'unix/osx.md',
-        'search': 'unix/search.md'
+        'search': 'unix/search.md',
+        'latest': 'latest.md'
 }
 
 tags = {
@@ -46,5 +47,6 @@ tags = {
         'osx': pages['osx'],
         'search': pages['search'],
         'find': pages['search'],
-        'grep': pages['search']
+        'grep': pages['search'],
+        'now': pages['latest']
 }
