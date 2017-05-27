@@ -27,6 +27,7 @@ def print_contents():
         + "latest.md" + "|" \
         + "template.md" + "|" \
         + "README.md" + "|" \
+        + "LICENSE.md" + "|" \
         + "pipeline" \
         + "\""
     argument = program + manual_path + options + excluded_files
