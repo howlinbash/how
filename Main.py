@@ -1,6 +1,7 @@
 #! /usr/bin/python3
 
 import subprocess
+import sys
 
 from lib.db import tags
 from lib.argparser import args, parser
@@ -42,7 +43,9 @@ def view_page(page_path):
 def get_page_path(arg):
     return str(tags.get(arg, 0))
 
-if args.view:
+if len(sys.argv) == 1:
+    open_page('index.md')
+elif args.view:
     view_page(get_page_path(args.view[0]))
 elif args.print_contents:
     print_contents()
