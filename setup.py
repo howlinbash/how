@@ -6,10 +6,11 @@ from lib.db import tags
 from lib.argparser import args, parser
 
 manual_path = "/home/howlin/src/manual/"
+editor = 'nvim'
 
 def open_page(page_path):
     command = manual_path + page_path
-    subprocess.call(['vim', command])
+    subprocess.call([editor, command])
 
 def list_tags():
     col_width = max(len(tag) for tag in tags) + 2
