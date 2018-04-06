@@ -22,10 +22,11 @@ def print_contents():
     program = "tree "
     options = " --noreport -C --dirsfirst -I "
     excluded_files = "\"" \
-        + "home.md" + "|" \
         + "howlin-wolf-square-tiny.jpg" + "|" \
         + "index.md" + "|" \
         + "latest.md" + "|" \
+        + "list_index.md" + "|" \
+        + "tags" + "|" \
         + "template.md" + "|" \
         + "README.md" + "|" \
         + "LICENSE.md" + "|" \
