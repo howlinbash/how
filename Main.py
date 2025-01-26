@@ -2,11 +2,13 @@
 
 import subprocess
 import sys
+import os
 
 from lib.db import tags
 from lib.argparser import args, parser
 
-manual_path = "/home/howlin/src/manual/"
+home = os.path.expanduser('~')
+manual_path = home + "/src/manual/"
 editor = 'nvim'
 
 def open_page(page_path):
